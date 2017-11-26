@@ -5,6 +5,7 @@ const app = express();
 const routes = require("./routes");
 
 const jsonParser = require('body-parser').json;
+const logger = require('morgan');
 
 app.use(jsonParser());
 app.use("/questions",routes);
